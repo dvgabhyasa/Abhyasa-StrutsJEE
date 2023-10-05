@@ -1,2 +1,12 @@
 # Abhyasa-StrutsJEE
-This is Struts MVC framework to develop JEE web applications. Struts versions 2.5, 6.0 are incorporated in each of feature branch. Not initialised maven here while creating this repository.
+
+## Scaffold
+
+As per struts official documentation provides four different artifacts in maven repository.
+Need to check for each struts version 2.5 & 6.0.
+
+This branch will provide those artifacts in respective artifacts for demo and analysis purpose.
+
+--------
+## References:
+[Official : Struts Maven Archetype](https://struts.apache.org/maven-archetypes/)
