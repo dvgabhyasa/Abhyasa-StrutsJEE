@@ -1,11 +1,8 @@
 # Abhyasa-StrutsJEE
 
-## Scaffold
+## Scaffold Convention Archetype
 
-As per struts official documentation provides four different artifacts in maven repository.
-Need to check for each struts version 2.5 & 6.0.
-
-This branch will provide those artifacts in respective artifacts for demo and analysis purpose.
+We have implemented Struts 2.5 Convention archetype using Maven.
 
 --------
 ## References:
