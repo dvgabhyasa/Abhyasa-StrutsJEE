@@ -24,3 +24,10 @@ hs_err_pid*
 replay_pid*
 /target/
 /.settings
+
+
+# Eclipse Core
+.project
+
+# JDK-specific (Eclipse Java Development Tool)
+.classpath

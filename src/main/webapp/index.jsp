@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Struts 2 Scaffolding</title>
 </head>
 <body>
-<h1>Hello from Struts2 Application</h1>
+
+	<h1>Hello from Struts2 Application</h1>
+
 </body>
 </html>
