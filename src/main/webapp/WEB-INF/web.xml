@@ -10,11 +10,12 @@
 	<!-- First Filter : intercepts everything that comes in Struts web module -->
   <filter>
     <filter-name>struts2</filter-name>
-    <filter-class>
-    	<!-- Package name is different for Struts 2.5 and above as compare with older version of Struts -->
+    <filter-class>    	
       org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter
     </filter-class>
   </filter>
+  <!-- Package name is different for Struts 2.5 and above as compare with older version of Struts -->
+  
   <filter-mapping>
     <filter-name>struts2</filter-name>
     <url-pattern>/*</url-pattern>

@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<groupId>edu.abhyasa.strutsops</groupId>
 	<artifactId>Abhyasa-StrutsJEE-Scaffold-Macz</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
@@ -12,8 +13,7 @@
 
 	<!-- Name Desc Url -->
 	<name>Struts Macz</name>
-	<description>This is a Cameron Macenzee playlist implementation from
-		scaffold to various usecases.</description>
+	<description>This is a Cameron Macenzee playlist implementation from scaffold to various usecases.</description>
 	<url>http://struts.abhyasa.edu</url>
 
 	<dependencies>
@@ -22,36 +22,58 @@
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
-			<version>2.5.5</version>
+			<version>${struts2.version}</version>
 			<!--<version>6.3.0</version>-->
 		</dependency>
 
 		<!-- Struts2-Convention from
-		https://central.sonatype.com/artifact/org.apache.struts/struts2-convention-plugin/2.5.32 -->
+		https://central.sonatype.com/artifact/org.apache.struts/struts2-convention-plugin/2.5.32-->
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-convention-plugin</artifactId>
-			<version>2.5.10</version>
+			<version>${struts2.version}</version>
+		</dependency>
+		
+		<!-- Struts jUnit plugin -->
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-junit-plugin</artifactId>
+			<version>${struts2.version}</version>
 		</dependency>
 
-		<!--Servlet API from : https://central.sonatype.com/artifact/javax.servlet/javax.servlet-api/3.1.0 -->
+		<!-- Servlet API from : https://central.sonatype.com/artifact/javax.servlet/javax.servlet-api/3.1.0 -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
+		
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+		
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
-			<version>2.5</version>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j.version}</version>
 		</dependency>
 
 	</dependencies>
 
 
 	<build>
+		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -85,4 +107,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<properties>
+		<struts2.version>2.5.10</struts2.version>
+		<log4j.version>2.10.0</log4j.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
 </project>
