@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- Project Co-ordinates-->
+	<groupId>edu.abhyasa.strutsops</groupId>
+	<artifactId>Abhyasa-StrutsJEE-Scaffold-XML</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<!-- General Information-->
+	<name>Abhyasa-StrutsJEE-Scaffold-XML</name>
+	<description>This is Struts 2 scaffold approach using xml methodology.</description>
+
+	<!-- Properties -->
+	<properties>
+		<struts2.version>2.5</struts2.version>
+		<log4j2.version>2.5</log4j2.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- Dependencies -->
+	<dependencies>
+		<!-- Struts2-Core dependency-->
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>${struts2.version}</version>
+		</dependency>
+
+		<!-- Struts 2 Conventon Plugin -->
+		<!--<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-convention-plugin</artifactId>
+			<version>${struts2.version}</version>
+		</dependency>-->
+		
+		<dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+
+		<!-- Servlet & JSP dependencies for JSP pages creation for UI & result
+		pages -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+	</dependencies>
+
+
+	<!-- Maven Build plugins -->
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<!-- Compiler Plugin -->
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<!-- Jetty Server Plugin -->
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>8.1.16.v20140903</version>
+				<configuration>
+					<stopKey>CTRL+C</stopKey>
+					<stopPort>8999</stopPort>
+					<systemProperties>
+						<systemProperty>
+							<name>xwork.loggerFactory</name>
+							<value>
+								com.opensymphony.xwork2.util.logging.log4j2.Log4j2LoggerFactory</value>
+						</systemProperty>
+					</systemProperties>
+					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<webAppSourceDirectory>${basedir}/src/main/webapp/</webAppSourceDirectory>
+					<webAppConfig>
+						<descriptor>${basedir}/src/main/webapp/WEB-INF/web.xml</descriptor>
+					</webAppConfig>
+				</configuration>
+			</plugin>
+			<!-- Maven war plugin -->
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.0</version>
+				<configuration>
+					<warSourceDirectory>WebContent</warSourceDirectory>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+</project>

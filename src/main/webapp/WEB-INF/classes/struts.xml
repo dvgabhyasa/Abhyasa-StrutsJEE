@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<!-- Constant Tag for customize default.properties -->
+	<constant name="struts.devMode" value="true"></constant>
+
+	<!-- Package tag provides a submodule -->
+	<package name="default" extends="struts-default" namespace="/">
+		<action name="loginController" class="edu.abhyasa.strutsops.actions.LoginAction">
+			<result name="SUCCESS">LoginSuccess.jsp</result>
+			<result name="FAILURE">LoginFailure.jsp</result>		
+		</action>
+	</package>
+		
+</struts>
