@@ -2,12 +2,16 @@ package edu.abhyasa.strutsops.actions;
 
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.Results;
 
 import com.opensymphony.xwork2.ActionSupport;
 
 @Action("/loginController")
-@Result(name = "error", location = "/LoginFailure.jsp")
-//@Result(name = "success", location = "/LoginSuccess.jsp")
+// @Results - allow to define more than one result annotation
+@Results({
+	@Result(name = "success", location = "/LoginSuccess.jsp"),
+	@Result(name = "error", location = "/LoginFailure.jsp")
+})
 public class LoginAction extends ActionSupport {
 
 	/**
