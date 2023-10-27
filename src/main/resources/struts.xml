@@ -18,6 +18,9 @@
 			<result name="success">/hello.jsp</result>
 		</action>
 		
-		
+		<action name="urlquery" class="edu.abhayasa.strutsops.actions.UrlopsAction" method="execute">
+			<result name="success">/urlops-result.jsp</result>			
+		</action>
+
 	</package>
 </struts>

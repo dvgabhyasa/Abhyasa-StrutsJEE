@@ -1,18 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Struts Web Ops | Index</title>
+<title>Struts Web Ops | URL Result</title>
 </head>
 <body>
 
-<h1>Web Ops</h1>
-<p>WebOps is an exploration of all web elements using struts 2 taglibs.</p>
+<h1>URL Query String Result</h1>
 
-<a href="urlops.jsp">URL Scenarios</a> 
+<s:property value="helloMessageModel.helloMessage"/>
 
 </body>
 </html>

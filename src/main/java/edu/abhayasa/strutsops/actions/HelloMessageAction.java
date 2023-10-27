@@ -18,7 +18,10 @@ public class HelloMessageAction extends ActionSupport {
 	private static final long serialVersionUID = 7257415540269966970L;
 	
 	// Model variable
-	private HelloMessageModel helloMessageModel;	
+	private HelloMessageModel helloMessageModel;
+
+	// Property tag to 
+	private static int count = 0;
 	
 	/**
 	 * 
@@ -27,6 +30,7 @@ public class HelloMessageAction extends ActionSupport {
 	public String execute() throws Exception {
 		System.out.println("Action class");
 		helloMessageModel = new HelloMessageModel();
+		count++;
 		return SUCCESS;
 	}
 
@@ -36,4 +40,13 @@ public class HelloMessageAction extends ActionSupport {
 	public HelloMessageModel getHelloMessageModel() {
 		return helloMessageModel;
 	}
+
+	/**
+	 * @return the count
+	 */
+	public static int getCount() {
+		return count;
+	}
+
+	
 }

@@ -21,6 +21,19 @@ public class HelloMessageModel {
 	public String getHelloMessage() {
 		return helloMessage;
 	}
+	
+	
+	/**
+	 * @param helloMessage the helloMessage to set
+	 */
+	public void setHelloMessage(String helloMessage) {
+		this.helloMessage = helloMessage;
+	}
 
-		
+	@Override
+	public String toString() {
+		return "HelloMessageModel [helloMessage=" + helloMessage + "]";
+	}
+	
+	
 }
