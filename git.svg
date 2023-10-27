@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1092" height="443" viewBox="0 0 1092 443">
+<rect x="467" y="288" height="24" width="144" rx="12" ry="12" style="stroke:#000000; stroke-width:1; fill: #000000"/>
+<text x="487"  y="302" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">HelloOps-Action</text>
+<rect x="280" y="42" height="24" width="219" rx="12" ry="12" style="stroke:#00ddaa; stroke-width:1; fill: #00ddaa"/>
+<text x="300"  y="56" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">origin/Scaffold-Annotation</text>
+<path d="M 528 42 a 12 12 0 0 1 12 -12 h 148 a 12 12 0 0 1 12 12 V 54 h -172 z " style="stroke:#00c300; stroke-width:1; fill: #00c300"/>
+<text x="548"  y="44" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">Scaffold-XML</text>
+<path d="M 528 54 h 172 V 66 a 12 12 0 0 1 -12 12 h -148 a 12 12 0 0 1 -12 -12 z " style="stroke:#00ddaa; stroke-width:1; fill: #00ddaa"/>
+<text x="548"  y="68" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">origin/Scaffold-XML</text>
+<rect x="30" y="42" height="24" width="219" rx="12" ry="12" style="stroke:#00ddaa; stroke-width:1; fill: #00ddaa"/>
+<text x="50"  y="56" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">origin/Scaffold-Convention</text>
+<rect x="747" y="42" height="24" width="185" rx="12" ry="12" style="stroke:#00ddaa; stroke-width:1; fill: #00ddaa"/>
+<text x="767"  y="56" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">origin/Scaffold-Blank</text>
+<path d="M 430 212 a 12 12 0 0 1 12 -12 h 120 a 12 12 0 0 1 12 12 V 224 h -144 z " style="stroke:#00c300; stroke-width:1; fill: #00c300"/>
+<text x="450"  y="214" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">Scaffold</text>
+<path d="M 430 224 h 144 V 236 a 12 12 0 0 1 -12 12 h -120 a 12 12 0 0 1 -12 -12 z " style="stroke:#00ddaa; stroke-width:1; fill: #00ddaa"/>
+<text x="450"  y="238" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">origin/Scaffold</text>
+<rect x="160" y="213" height="24" width="233" rx="12" ry="12" style="stroke:#00ddaa; stroke-width:1; fill: #00ddaa"/>
+<text x="180"  y="227" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">origin/CameronMcKenzie-Steps</text>
+<rect x="341" y="288" height="24" width="97" rx="12" ry="12" style="stroke:#00ffff; stroke-width:1; fill: #00e5ff"/>
+<text x="361"  y="302" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">fabf56cb</text>
+<path d="M 406 355 a 12 12 0 0 1 12 -12 h 93 a 12 12 0 0 1 12 12 V 367 h -117 z " style="stroke:#00c300; stroke-width:1; fill: #00c300"/>
+<text x="426"  y="357" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">HelloOps</text>
+<path d="M 406 367 h 117 V 391 h -117 z " style="stroke:#00c300; stroke-width:1; fill: #00c300"/>
+<text x="426"  y="381" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">main</text>
+<path d="M 406 392 h 117 V 416 h -117 z " style="stroke:#00ddaa; stroke-width:1; fill: #00ddaa"/>
+<text x="426"  y="406" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">origin/HEAD</text>
+<path d="M 406 417 h 117 V 429 a 12 12 0 0 1 -12 12 h -93 a 12 12 0 0 1 -12 -12 z " style="stroke:#00ddaa; stroke-width:1; fill: #00ddaa"/>
+<text x="426"  y="431" style="font-family:Consolas;font-size:9pt;font-style:none;font-weight:none;stroke:none;text-anchor: left;fill:#000000;">origin/main</text>
+<polyline points="529,313 505,342" style="stroke:#000000; stroke-width:2; fill:none;"/>
+<path d="M 526 317 L 522 317 L 529 313 L 527 321 L 526 317" style="stroke:#000000; stroke-width:2; fill:#000000;"/>
+<polyline points="398,68 485,200" style="stroke:#000000; stroke-width:2; fill:none;"/>
+<path d="M 401 72 L 400 75 L 398 68 L 405 72 L 401 72" style="stroke:#000000; stroke-width:2; fill:#000000;"/>
+<polyline points="598,80 519,200" style="stroke:#000000; stroke-width:2; fill:none;"/>
+<path d="M 595 84 L 591 84 L 598 80 L 596 88 L 595 84" style="stroke:#000000; stroke-width:2; fill:#000000;"/>
+<polyline points="167,68 448,200" style="stroke:#000000; stroke-width:2; fill:none;"/>
+<path d="M 171 70 L 172 73 L 167 68 L 175 68 L 171 70" style="stroke:#000000; stroke-width:2; fill:#000000;"/>
+<polyline points="814,68 552,200" style="stroke:#000000; stroke-width:2; fill:none;"/>
+<path d="M 810 70 L 806 68 L 814 68 L 809 74 L 810 70" style="stroke:#000000; stroke-width:2; fill:#000000;"/>
+<polyline points="464,251 409,287" style="stroke:#000000; stroke-width:2; fill:none;"/>
+<path d="M 460 253 L 456 252 L 464 251 L 459 257 L 460 253" style="stroke:#000000; stroke-width:2; fill:#000000;"/>
+<polyline points="297,238 370,287" style="stroke:#000000; stroke-width:2; fill:none;"/>
+<path d="M 300 241 L 301 245 L 297 238 L 304 240 L 300 241" style="stroke:#000000; stroke-width:2; fill:#000000;"/>
+<polyline points="400,313 424,342" style="stroke:#000000; stroke-width:2; fill:none;"/>
+<path d="M 403 317 L 402 321 L 400 313 L 407 317 L 403 317" style="stroke:#000000; stroke-width:2; fill:#000000;"/>
+
+</svg>
