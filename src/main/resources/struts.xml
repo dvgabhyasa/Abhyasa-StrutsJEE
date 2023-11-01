@@ -14,5 +14,11 @@
 			<result>/index.jsp</result>
 		</action>
 		
+		<!-- HTML & JSP form handling with same fields -->
+		<action name="simpleformops" class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction" method="execute">
+			<result name="success">/result.jsp</result>
+			<!-- <result name="error">/result.jsp</result> -->
+		</action>
+		
 	</package>
 </struts>

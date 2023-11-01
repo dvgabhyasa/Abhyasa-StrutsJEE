@@ -5,12 +5,15 @@ This is Struts MVC framework to develop JEE web applications. Struts versions 2.
 
 ## Form Operations
 This branch is associated with every aspect of form operations using struts2 framework.
+
+Functionality > UI > Accessibility
+
 This includes following topics to be covered.
-* Accessibility [Design]
+* Accessibility [Design] ?
 * Form Creation using Struts taglib [Design]
-* Form field abstraction from Model & Action class
-* Form Processing using Model
-* Form Validation
-* Form label i18N using resource files
-* PDF generation
-* Mail for record purpose with pdf attachment
+* Form field abstraction using Struts Model & Action class
+* Form Processing using Struts Model
+* Form Validation using ?
+* Form label using Struts i18N using resource files ?
+* PDF generation ?
+* Mail for record purpose with pdf attachment ?

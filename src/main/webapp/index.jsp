@@ -9,10 +9,24 @@
 
 <body>
 <h1>Form Operations</h1>
-<p>This performs struts taglib based form operations.</p>
 
-	<a href="">Simplest Form</a>
+This demonstrates Struts 2 form tags mimic normal HTML form element.
+<p>This demonstrate similar execution operation for html form and struts form to understand behavioural difference between them.</p>
+<!-- <p>Objective : This demonstrates various form operations scenarios like design, develop, processing, pdf generation, mail 📧 & security 🔐.</p> -->
+ 
+	<!-- HTML Form -->
+	<fieldset>
+		<legend>HTML Forms</legend>
+		<p>This is simple html form elements.</p>
+		<a href="simpleform.html" target="_blank">HTML Simple Form</a>
+	</fieldset>
 	
-	
+	<!-- Struts Form -->
+	<fieldset>
+		<legend>Struts Forms</legend>
+		<p>This performs struts taglib based form operations.</p>
+		<a href="simpleform.jsp" target="_blank">Struts Simple Form</a>
+	</fieldset>
+
 </body>
 </html>

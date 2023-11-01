@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Struts FormOps | HTML Form</title>
+</head>
+<body>
+	<h1>HTML Form</h1>
+	<p>This is simple html form processed using struts.</p>
+	
+	<form method="post" action="simpleformops">
+		<!-- Scenario : Form field name having reference --> 
+		<label>First Name</label> : <input type="text" name="simpleFormBean.txtFirstname" id="txtFirstname" />
+		<label>Last Name</label> : <input type="text" name="simpleFormBean.txtLastname" id="txtLastname" />		
+		<label>Email</label> : <input type="text" name="simpleFormBean.txtEmail" id="txtEmail" />
+		<label>Age</label> : <input type="text" name="simpleFormBean.txtAge" id="txtAge" />
+		<!-- [Approach Result ] Data captured successfully. -->
+		
+		<!-- Scenario : Another scenario where we are not providing reference for field name 
+		<label>First Name</label> : <input type="text" name="txtFirstname" id="txtFirstname" />
+		<label>Last Name</label> : <input type="text" name="txtLastname" id="txtLastname" />
+		<label>Email</label> : <input type="text" name="txtEmail" id="txtEmail" />
+		<label>Age</label> : <input type="text" name="txtAge" id="txtAge" />-->
+		<!-- Result : Data is not captured. -->
+		
+		<button type="submit">Submit</button>
+		<button type="reset"/>Reset</button>
+		
+	</form>
+
+</body>
+</html>
