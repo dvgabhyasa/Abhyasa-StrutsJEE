@@ -13,7 +13,7 @@ This includes following topics to be covered.
 * Form Creation using Struts taglib [Design]
 * Form field abstraction using Struts Model & Action class
 * Form Processing using Struts Model
-* Form Validation using ?
+* Form Validation using Action class override validate method with styling
 * Form label using Struts i18N using resource files ?
 * PDF generation ?
 * Mail for record purpose with pdf attachment ?
