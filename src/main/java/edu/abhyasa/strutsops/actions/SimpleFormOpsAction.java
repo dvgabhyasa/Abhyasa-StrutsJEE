@@ -88,6 +88,8 @@ public class SimpleFormOpsAction extends ActionSupport {
 		System.out.println(getSimpleFormBean().toString());
 		return SUCCESS;
 	}
+	
+	// ------------------------ Getters & Setters ------------------------ //
 
 	/**
 	 * @return the simpleFormBean

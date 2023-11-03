@@ -26,6 +26,10 @@ This demonstrates Struts 2 form tags mimic normal HTML form element.
 		<legend>Struts Forms</legend>
 		<p>This performs struts taglib based form operations.</p>
 		<a href="simpleform.jsp" target="_blank">Struts Simple Form</a>
+		
+		<p>After enabling labels coming from respective properties file, the display of view page must be the result of executing a Struts 2 Action class.</p>
+		<s:url action="" var="" />
+		<s:a href="${}">Struts Simple Form with property</s:a>
 	</fieldset>
 
 </body>

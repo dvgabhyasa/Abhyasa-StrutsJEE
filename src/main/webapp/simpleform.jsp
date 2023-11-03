@@ -16,10 +16,10 @@ Just before the end of head tag
 <body>
 
 <s:form action="simpleformops">
-	<s:textfield name="simpleFormBean.txtFirstname" label="First Name" />
-	<s:textfield name="simpleFormBean.txtLastname" label="Last Name" />
-	<s:textfield name="simpleFormBean.txtEmail" label="Email" />
-	<s:textfield name="simpleFormBean.txtAge" label="Age" />
+	<s:textfield key="simpleFormBean.txtFirstname" />
+	<s:textfield key="simpleFormBean.txtLastname" />
+	<s:textfield key="simpleFormBean.txtEmail" />
+	<s:textfield key="simpleFormBean.txtAge" />
 	
 	<s:submit value="Submit" />
 	<s:reset value="Reset" />
