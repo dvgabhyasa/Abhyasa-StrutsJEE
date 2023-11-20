@@ -12,7 +12,7 @@ To provide styling using CSS for error messages
 Returns a chunk of HEAD
 Just before the end of head tag
  -->
-<s:head/>
+<s:head />
 <body>
 
 <s:form action="simpleformops">
@@ -21,8 +21,8 @@ Just before the end of head tag
 	<s:textfield key="simpleFormBean.txtEmail" />
 	<s:textfield key="simpleFormBean.txtAge" />
 	
-	<s:submit value="Submit" />
-	<s:reset value="Reset" />
+	<s:submit key="simpleFormBean.submit" />
+	<s:reset key="simpleFormBean.reset" />
 </s:form>
 
 </body>

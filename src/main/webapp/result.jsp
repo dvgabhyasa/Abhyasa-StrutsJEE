@@ -14,5 +14,8 @@
 <p>Your detail info</p>
 <s:property value="simpleFormBean"/>
 
+<p>	<s:text name="simpleFormBean.thankyou"></s:text>	</p>
+
+
 </body>
 </html>

@@ -14,11 +14,17 @@
 			<result>/index.jsp</result>
 		</action>
 		
-		<!-- HTML & JSP form handling with same fields -->
+		<!-- [2.Processing] HTML & JSP form handling with same fields with lesser complexity with form rendering -->
 		<action name="simpleformops" class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction" method="execute">
 			<result name="success">/result.jsp</result>
 			<!-- Handling Validation in Struts 2 Framework -->
 			<result name="input">simpleform.jsp</result>			
+		</action>
+		
+		<!-- [1.Rendering] This block suppose to be up in order to render purpose. 
+		 For learning purpose kept later here due to introducing complexity with property resources -->
+		<action name="simpleformInput" class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction" method="input">
+			<result name="input">/simpleform.jsp</result>
 		</action>
 		
 	</package>
