@@ -6,6 +6,9 @@
 <struts>
 	<!-- Constant Tag for customize default.properties -->
 	<constant name="struts.devMode" value="true" />
+	
+	<!-- Adding global properties file by informing struts framework using following node -->
+	<constant name="struts.custom.i18n.resources" value="global" />
 
 	<!-- Package tag provides a submodule -->
 	<package name="default" extends="struts-default" namespace="/">

@@ -21,8 +21,9 @@
 	<s:a href="%{indexLink}">Return to Home page</s:a>
 </p>
 
+<hr />
 <p> Package Level Property Content : <s:text name="greetingPackageLevelProperty" /> </p>
-
+<p> Global Level Property Content : <s:text name="contact"></s:text> </p>
 
 </body>
 </html>
