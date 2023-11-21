@@ -16,6 +16,13 @@
 
 <p>	<s:text name="simpleFormBean.thankyou"></s:text>	</p>
 
+<p>
+	<s:url action="index" var="indexLink" />
+	<s:a href="%{indexLink}">Return to Home page</s:a>
+</p>
+
+<p> Package Level Property Content : <s:text name="greetingPackageLevelProperty" /> </p>
+
 
 </body>
 </html>

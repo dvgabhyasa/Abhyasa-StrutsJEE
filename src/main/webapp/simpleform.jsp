@@ -15,6 +15,7 @@ Just before the end of head tag
 <s:head />
 <body>
 
+
 <s:form action="simpleformops">
 	<s:textfield key="simpleFormBean.txtFirstname" />
 	<s:textfield key="simpleFormBean.txtLastname" />
