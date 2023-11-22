@@ -47,10 +47,16 @@
 			<artifactId>log4j-core</artifactId>
 			<version>${log4j2.version}</version>
 		</dependency>-->
+		
+		<!-- Debugging browser plugin for struts 2 framework -->
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-config-browser-plugin</artifactId>
+			<version>${struts2.version}</version>
+		</dependency>
 
 
-		<!-- Servlet & JSP dependencies for JSP pages creation for UI & result
-		pages -->
+		<!-- Servlet & JSP dependencies for JSP pages creation for UI & result pages -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>

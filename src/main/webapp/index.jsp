@@ -41,15 +41,21 @@ This demonstrates Struts 2 form tags mimic normal HTML form element.
 		<!-- When using struts taglib for href use % and When use html for href use $ to refer url variable -->
 		<a href="${simpleformInputLink}" target="_blank">Struts Simple Form with property</a>
 		
-		<s:url action="simpleformInput" var="simpleformInputLinkES">
-		    <s:param name="request_locale">es</s:param>
-		</s:url>
-		<p><a href="${simpleformInputLinkES}">Por favor, regístrese [in Spanish]</a> para nuestro sorteo</p>
 		<!--
 		[Scenario] Specify locale as URL parameter 
 			Action class that respond to this URL will see the locale es and look for prperty files with _es.
 			It will use respective properties file to replace values of respective property keys reference in view page.
 		 -->
+		<s:url action="simpleformInput" var="simpleformInputLinkES">
+		    <s:param name="request_locale">es</s:param>
+		</s:url>
+		<p><a href="${simpleformInputLinkES}">Por favor, regístrese [in Spanish]</a> para nuestro sorteo</p>
+		
+		<!-- [Scenario] Debugging Register page by specifying action with namespace value config-browser 
+			Create link structure : This create url with actionname.action with prefix separator config-browser
+		-->
+		 <a href='<s:url action="simpleformInput" namespace="config-browser" />' >launch configuration browser for register form</a>
+		 
 		
 	</fieldset>
 	
