@@ -9,19 +9,19 @@
 	
 	<!-- Adding global properties file by informing struts framework using following node -->
 	<constant name="struts.custom.i18n.resources" value="global" />
-
+	
 	<!-- Package tag provides a submodule -->
 	<package name="default" extends="struts-default" namespace="/">
 		
 		<action name="index">
 			<result>/index.jsp</result>
 		</action>
-		
+
 		<!-- [2.Processing] HTML & JSP form handling with same fields with lesser complexity with form rendering -->
 		<action name="simpleformops" class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction" method="execute">
 			<result name="success">/result.jsp</result>
 			<!-- Handling Validation in Struts 2 Framework -->
-			<result name="input">simpleform.jsp</result>			
+			<result name="input">simpleform.jsp</result>
 		</action>
 		
 		<!-- [1.Rendering] This block suppose to be up in order to render purpose. 
@@ -29,6 +29,6 @@
 		<action name="simpleformInput" class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction" method="input">
 			<result name="input">/simpleform.jsp</result>
 		</action>
-		
-	</package>
+
+	</package> <!-- Default Package ends -->
 </struts>

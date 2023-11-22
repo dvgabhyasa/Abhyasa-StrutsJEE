@@ -24,6 +24,7 @@ Just before the end of head tag
 	
 	<s:submit key="simpleFormBean.submit" />
 	<s:reset key="simpleFormBean.reset" />
+	
 </s:form>
 
 </body>
