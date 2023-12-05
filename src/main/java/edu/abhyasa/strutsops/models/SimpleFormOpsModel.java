@@ -12,7 +12,9 @@ public class SimpleFormOpsModel {
 	private String txtFirstname;
 	private String txtLastname;
 	private String txtEmail;
+	// For age there need a clarity about data type, whether to make it integer or string
 	private int txtAge;
+	//private String txtAge;
 	
 	/**
 	 * @return the txtFirstname
@@ -69,6 +71,20 @@ public class SimpleFormOpsModel {
 	public void setTxtAge(int txtAge) {
 		this.txtAge = txtAge;
 	}
+	
+	/**
+	 * @return the txtAge
+	 */
+//	public String getTxtAge() {
+//		return txtAge;
+//	}
+
+	/**
+	 * @param txtAge the txtAge to set
+	 */
+//	public void setTxtAge(String txtAge) {
+//		this.txtAge = txtAge;
+//	}
 	
 	@Override
 	public String toString() {
