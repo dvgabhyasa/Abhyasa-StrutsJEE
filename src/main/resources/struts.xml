@@ -29,6 +29,19 @@
 		<action name="simpleformInput" class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction" method="input">
 			<result name="input">/simpleform.jsp</result>
 		</action>
+		
+		<!-- Struts 2 Form Tags -->
+		<!-- Form Tags JSP files -->		
+		<action name="formtag">
+			<result>/formtaglibs/formtag.jsp</result>
+		</action>
+		
+		<!-- Label Tag -->
+		<action name="formtag">
+			<result>/formtaglibs/labeltag.jsp</result>
+		</action>
+		
 
 	</package> <!-- Default Package ends -->
+	
 </struts>
