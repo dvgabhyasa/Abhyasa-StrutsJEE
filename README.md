@@ -9,15 +9,18 @@ This branch is associated with every aspect of form operations using struts2 fra
 Functionality > UI > Accessibility
 
 This includes following topics to be covered using a registration life cycle.
-* Accessibility [Design] ?
+
+* **Taglib**
 * Form elements with Struts taglib [Design]
+* Accessibility [2Do]
 * 
-* Captcha integration [Security]
 * 
+* Form label using Struts i18N using resource files for package & global level [Done]
 * Form field abstraction using Struts Model & Action class
 * Form Processing using Struts Model
-* Form Validation using Action class override validate method with styling
-* Form label using Struts i18N using resource files for package & global level
+* Form Validation using Action class override validate method with styling	[Done]
+* Logging action classes using log4j [Progress]
+
 * 
 * Database Integration using Hibernate [2Do]
 * 
@@ -25,7 +28,10 @@ This includes following topics to be covered using a registration life cycle.
 * Mail for record purpose with pdf attachment ?
 * 
 * Unit Test [Completed Official]
-* Form Security
+*
+* **Form Security**
+* 
+* Captcha integration []
 * - CSRF Token
 * - Cross Site SCripting
-* - 
+* - DDoS Prevention

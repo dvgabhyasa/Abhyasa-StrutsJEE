@@ -8,14 +8,22 @@
  */
 package edu.abhyasa.strutsops.actions;
 
-import com.opensymphony.xwork2.ActionSupport;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.opensymphony.xwork2.ActionSupport;
 import edu.abhyasa.strutsops.models.SimpleFormOpsModel;
 
 /**
  * 
  */
 public class SimpleFormOpsAction extends ActionSupport {
+	
+	/**
+	 * Logger for Action class
+	 */
+	private static Logger logger = LogManager.getLogger(SimpleFormOpsAction.class);
 	
 	private static final long serialVersionUID = 1L;
 
@@ -62,7 +70,14 @@ public class SimpleFormOpsAction extends ActionSupport {
 	 */
 	@Override
 	public void validate() {
-		System.out.println("Inside Validation method");
+		//System.out.println("Inside Validation method");
+		logger.debug("Debug - validate");
+		logger.info("Info - validate");
+		logger.warn("Warn - validate");
+		logger.error("Error - validate");
+		logger.fatal("Fatel - validate");
+		
+		
 		// Get the value of firstName from Model instance field using appropriate get method
 		// Once we have value we can apply logic to enforce business validation logics
 		if(simpleFormBean.getTxtFirstname().length() == 0) {
@@ -84,8 +99,17 @@ public class SimpleFormOpsAction extends ActionSupport {
 	 */
 	@Override
 	public String execute() throws Exception {
-		System.out.println("In Action execute method");
-		System.out.println(getSimpleFormBean().toString());
+		//System.out.println("In Action execute method");
+		logger.info("In Action execute method");
+		logger.info(getSimpleFormBean().toString());
+		//System.out.println(getSimpleFormBean().toString());
+		
+		logger.debug("Exe - validate");
+		logger.info("Exe - validate");
+		logger.warn("Exe - validate");
+		logger.error("Exe - validate");
+		logger.fatal("Exe - validate");
+		
 		return SUCCESS;
 	}
 	

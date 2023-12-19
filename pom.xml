@@ -22,6 +22,7 @@
 
 		<java.version>1.8</java.version>
 		<struts2.version>2.5</struts2.version>
+		<log4j2.version>2.17.2</log4j2.version>
 	</properties>
 
 	<!-- Dependencies -->
@@ -41,11 +42,19 @@
 			<version>${struts2.version}</version>
 		</dependency>
 
-		<!--<dependency>
+		<!-- Logging : Action class -->
+		<!-- log4j-api conains log4j specification -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+		<!-- log4j-core conains log4j core implementation-->
+		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>${log4j2.version}</version>
-		</dependency>-->
+		</dependency>
 		
 		<!-- Debugging browser plugin for struts 2 framework -->
 		<dependency>
