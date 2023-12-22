@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration 
+			SYSTEM "-//Hibernate/Hibernate Coniguration DTD 3.0//EN"  
+			"classpath://org/hibernate/hibernate-configuration-3.0.dtd">
+
+<!-- 
+<!DOCTYPE hibernate-configuration 
+		PUBLIC "-//Hibernate/Hibernate Coniguration DTD 3.0//EN"  
+		"https://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+-->
+
+<!-- This is Hibernate configuration file. This contain configuration about 
+	database connection, persistance data file -->
+	
+<hibernate-configuration>
+	<session-factory>
+		<!-- SQL Dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	
+		<!-- Database Connection Settings -->
+		<property name"connection.driver_class">com.mysql.jdbc.Driver</property>				<!-- jdbc driver class -->
+		<property name"connection.url">jdbc://mysql://localhost:3306/formopshibdb</property>	<!--  -->
+		<property name"connection.username">root</property>										<!--  -->
+		<property name"connection.password"></property>											<!--  -->
+		
+		<!-- Show SQL query to STDOUT -->
+		<property name="show_sql">true</property>
+		
+		<!--  
+		Set to create
+		- Based on Model object this will create database schema, required to save those model objects in tables
+		- No need to create table, hibernate creates those table if not found
+		- it will have right columns which is required to save all the member variable of object 
+		Set to update
+		- 
+		 -->
+		<property name="hbm2ddl.auto">create</property>
+		
+		<!-- Annotation Entity Class list names of model class for Hibernate to use -->
+		<mapping class="edu.abhyasa.strutsops.models.SimpleFormOpsModel" />
+		
+		
+		<!-- Cache Second Level : JavaBrains#-03-3.55-See Later -- >
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>-->
+		
+		<!-- Current Session Context  -->
+		<!-- <property name="current_session_context_class">thread</property>  -->
+		
+		<!-- Connection Pool configuration --//>
+		<property name="hibernate.dbcp.initialSize">5</property>
+		<property name="hibernate.dbcp.maxTotal">20</property>
+		<property name="hibernate.dbcp.maxIdle">10</property>
+		<property name="hibernate.dbcp.minIdle">5</property>
+		<property name="hibernate.dbcp.maxWaitMillis">-1</property>
+		 -->
+		 
+		 
+		<!-- Mapping with Model Class containing Annotations -->
+		
+	</session-factory>
+</hibernate-configuration>

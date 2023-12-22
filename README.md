@@ -19,7 +19,7 @@ This includes following topics to be covered using a registration life cycle.
 * Form field abstraction using Struts Model & Action class
 * Form Processing using Struts Model
 * Form Validation using Action class override validate method with styling	[Done]
-* Logging action classes using log4j [Console-OK, File-Progress]
+* Logging action classes using log4j [Console-OK, File-Pending]
 
 * 
 * Database Integration using Hibernate [2Do]

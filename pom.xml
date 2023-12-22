@@ -10,7 +10,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<!-- General Information --> 
+	<!-- General Information -->
 	<name>FormOps</name>
 	<description>This is a demonstration of form operations using struts 2.5
 		framework.</description>
@@ -23,6 +23,8 @@
 		<java.version>1.8</java.version>
 		<struts2.version>2.5</struts2.version>
 		<log4j2.version>2.17.2</log4j2.version>
+		<hibernate.version>5.2.8.Final</hibernate.version>	<!-- 15 Dec 2023 -->
+		<h2.version>6.4.1.Final</h2.version>
 	</properties>
 
 	<!-- Dependencies -->
@@ -55,24 +57,65 @@
 			<artifactId>log4j-core</artifactId>
 			<version>${log4j2.version}</version>
 		</dependency>
+
+		<!-- Hibernate Dependency -->
+		<!--
+		https://central.sonatype.com/artifact/org.hibernate/hibernate-core/5.6.15.Final -->
 		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.6.1.Final</version>
+		</dependency>
+
+		<!-- C3P0 connection pool with Hibernate -->
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-c3p0</artifactId>
+			<version>5.6.15.Final</version>
+			<type>pom</type>
+		</dependency>
+
+		<!-- MySQL Database Connector for Production Purpose -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+			<scope>runtime</scope>
+		</dependency>
+
+
+		<!-- H2 In-Memory Database for development purpose -->
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>2.2.224</version>
+			<scope>test</scope>
+		</dependency>
+
+
 		<!-- Debugging browser plugin for struts 2 framework -->
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-config-browser-plugin</artifactId>
 			<version>${struts2.version}</version>
 		</dependency>
-		
+
 		<!-- Dojo as dependency for debug table collapsable & expandable -->
-		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-dojo-plugin -->
+		<!--
+		https://mvnrepository.com/artifact/org.apache.struts/struts2-dojo-plugin -->
 		<dependency>
-		    <groupId>org.apache.struts</groupId>
-		    <artifactId>struts2-dojo-plugin</artifactId>
-		    <version>2.3.37</version>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-dojo-plugin</artifactId>
+			<version>2.3.37</version>
 		</dependency>
 
 
-		<!-- Servlet & JSP dependencies for JSP pages creation for UI & result pages -->
+		<!-- Servlet & JSP dependencies for JSP pages creation for UI & result
+		pages -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -86,17 +129,19 @@
 			<version>2.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
+
 		<!-- Testing Depenecy -->
-		
+
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-junit-plugin</artifactId>
 			<version>${struts2.version}</version>
-			<scope>test</scope>			
+			<scope>test</scope>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.apache.geronimo.specs/geronimo-servlet_3.0_spec 
+
+		<!--
+		https://mvnrepository.com/artifact/org.apache.geronimo.specs/geronimo-servlet_3.0_spec 
 		ToDo: Why is this required for unit testing Ref: McZ11
 		-->
 		<!--
@@ -108,8 +153,8 @@
 		</dependency>
 		-->
 		<!-- Ends Testing Depenecy -->
-		
-		 
+
+
 	</dependencies>
 
 	<!-- Maven Build Plugin -->
