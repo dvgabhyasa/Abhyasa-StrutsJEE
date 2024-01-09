@@ -14,22 +14,14 @@ public class SimpleFormOpsSessionFactory {
 
 	final static Logger logger = LogManager.getLogger(SimpleFormOpsSessionFactory.class);
 
-	// To execute standalone, use this main method
-	public static void main(String[] args) { 		
-	//public static void saveFormOpsModel() {
-
+	public static void saveFormOpsModel() {
+		logger.info("Inside SimpleFormOpsSessionFactory");
+		
 		// Using block : Solve[ Syntax Error On Token ",", { Expected After This Token ]
 		// Ref:https://javahungry.blogspot.com/2022/04/syntax-error-on-token-expected-after-this-token.html
 		Session session = buildSession();
 		
-		logger.info("Inside SimpleFormOpsSessionFactory");
-		
 		SimpleFormOpsModel simpleFormOpsModel = new SimpleFormOpsModel();
-		
-		simpleFormOpsModel.setTxtFirstname("Praveen");
-		simpleFormOpsModel.setTxtLastname("Dewangan");
-		simpleFormOpsModel.setTxtEmail("dvg.abhyasa@gmail.com");
-		simpleFormOpsModel.setTxtAge(20);
 		
 		try {			
 			Transaction tx = session.beginTransaction();
@@ -44,10 +36,10 @@ public class SimpleFormOpsSessionFactory {
 			session.close();
 		}
 
-	}	// ends main
+	}
 
 	/**
-	 * Save function for FormOpsModel
+	 * Save function for FormOpsModel from Action class
 	 * @param simpleFormOpsModel
 	 */
 	public static void saveFormOpsModel(SimpleFormOpsModel simpleFormOpsModel) {

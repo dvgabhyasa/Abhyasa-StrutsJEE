@@ -3,24 +3,32 @@
  */
 package edu.abhyasa.strutsops.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * 
  */
 @Entity
+@Table(name="simpleformops")
 public class SimpleFormOpsModel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="user_id")
 	private int idUser;
+	@Column(name = "user_firstname")
 	private String txtFirstname;
+	@Column(name = "user_lastname")
 	private String txtLastname;
+	@Column(name = "user_email")
 	private String txtEmail;
 	// For age there need a clarity about data type, whether to make it integer or string
+	@Column(name = "user_age")
 	private int txtAge;
 	//private String txtAge;
 	

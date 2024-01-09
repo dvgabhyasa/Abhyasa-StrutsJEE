@@ -13,6 +13,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.opensymphony.xwork2.ActionSupport;
+
+import edu.abhyasa.strutsops.hibernate.SimpleFormOpsSessionFactory;
 import edu.abhyasa.strutsops.models.SimpleFormOpsModel;
 
 /**
@@ -20,12 +22,12 @@ import edu.abhyasa.strutsops.models.SimpleFormOpsModel;
  */
 public class SimpleFormOpsAction extends ActionSupport {
 	
+	private static final long serialVersionUID = 1L;
+	
 	/**
 	 * Logger for Action class
 	 */
 	private static Logger logger = LogManager.getLogger(SimpleFormOpsAction.class);
-	
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Model reference variable
@@ -102,13 +104,10 @@ public class SimpleFormOpsAction extends ActionSupport {
 		//System.out.println("In Action execute method");
 		logger.info("In Action execute method");
 		logger.info(getSimpleFormBean().toString());
-		//System.out.println(getSimpleFormBean().toString());
+		System.out.println(getSimpleFormBean().toString());
 		
-		logger.debug("Exe - validate");
-		logger.info("Exe - validate");
-		logger.warn("Exe - validate");
-		logger.error("Exe - validate");
-		logger.fatal("Exe - validate");
+		// Insert using Hibernate
+		SimpleFormOpsSessionFactory.saveFormOpsModel(getSimpleFormBean());	
 		
 		return SUCCESS;
 	}
