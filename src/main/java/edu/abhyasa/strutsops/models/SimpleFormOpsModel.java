@@ -3,12 +3,20 @@
  */
 package edu.abhyasa.strutsops.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * 
  */
+@Entity
 public class SimpleFormOpsModel {
-
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int idUser;
 	private String txtFirstname;
 	private String txtLastname;
 	private String txtEmail;
@@ -17,12 +25,28 @@ public class SimpleFormOpsModel {
 	//private String txtAge;
 	
 	/**
+	 * @return the idUser
+	 */
+	public int getIdUser() {
+		return idUser;
+	}
+
+	/**
+	 * @param idUser the idUser to set
+	 */
+	public void setIdUser(int idUser) {
+		this.idUser = idUser;
+	}
+	
+	
+	/**
 	 * @return the txtFirstname
 	 */
 	public String getTxtFirstname() {
 		return txtFirstname;
 	}
 	
+
 	/**
 	 * @param txtFirstname the txtFirstname to set
 	 */

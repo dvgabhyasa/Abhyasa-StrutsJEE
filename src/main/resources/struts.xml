@@ -1,47 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE struts PUBLIC
-        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
-        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
 	<!-- Constant Tag for customize default.properties -->
 	<constant name="struts.devMode" value="true" />
-	
-	<!-- Adding global properties file by informing struts framework using following node -->
+
+	<!-- Adding global properties file by informing struts framework using
+	following node -->
 	<constant name="struts.custom.i18n.resources" value="global" />
-	
+
 	<!-- Package tag provides a submodule -->
 	<package name="default" extends="struts-default" namespace="/">
-		
+
 		<action name="index">
 			<result>/index.jsp</result>
 		</action>
 
-		<!-- [2.Processing] HTML & JSP form handling with same fields with lesser complexity with form rendering -->
-		<action name="simpleformops" class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction" method="execute">
+		<!-- [2.Processing] HTML & JSP form handling with same fields with
+		lesser complexity with form rendering -->
+		<action name="simpleformops"
+			class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction"
+			method="execute">
 			<result name="success">/result.jsp</result>
 			<!-- Handling Validation in Struts 2 Framework -->
 			<result name="input">simpleform.jsp</result>
 		</action>
-		
-		<!-- [1.Rendering] This block suppose to be up in order to render purpose. 
-		 For learning purpose kept later here due to introducing complexity with property resources -->
-		<action name="simpleformInput" class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction" method="input">
+
+		<!-- [1.Rendering] This block suppose to be up in order to render
+		purpose. 
+		 For learning purpose kept later here due to introducing complexity with
+		property resources -->
+		<action name="simpleformInput"
+			class="edu.abhyasa.strutsops.actions.SimpleFormOpsAction"
+			method="input">
 			<result name="input">/simpleform.jsp</result>
 		</action>
-		
+
 		<!-- Struts 2 Form Tags -->
-		<!-- Form Tags JSP files -->		
-		<action name="formtag">
-			<result>/formtaglibs/formtag.jsp</result>
+		<!-- Form Tags Struts Index page -->
+		<action name="formtaglib">
+			<result>formtaglibs/index.jsp</result>
 		</action>
-		
+
+
 		<!-- Label Tag -->
+		<!-- 
 		<action name="formtag">
 			<result>/formtaglibs/labeltag.jsp</result>
 		</action>
 		
+		<action name="processdoubleselect"
+		class="edu.abhyasa.strutsops.actions.DoubleSelectAction"
+		method="execute">
+			<result name="success">result.jsp</result>
+		</action>
+		
+		<action name="processSelect" class="edu.abhyasa.strutsops.actions.SelectAction"
+		method="execute">
+			<result name="success">formtaglibs/selectResult.jsp</result>
+		</action>
+		 -->
 
-	</package> <!-- Default Package ends -->
-	
+	</package> <!--
+	Default Package ends -->
+
 </struts>
